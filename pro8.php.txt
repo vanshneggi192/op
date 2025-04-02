@@ -49,7 +49,7 @@
             $college = $conn->real_escape_string($_POST['college']);
 
             $query = "INSERT INTO students (usn, name, branch, semester, college) 
-                      VALUES ('$usn', '$name', '$branch', $semester, '$college')";
+                      VALUES ('$usn', '$name', '$branch', $seemester, '$college')";
             if ($conn->query($query)) {
                 echo "Student with USN '$usn' inserted successfully.";
             } else {
